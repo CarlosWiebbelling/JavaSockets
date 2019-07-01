@@ -1,0 +1,32 @@
+No cliente, deverão constar as seguintes opções na tela (console):
+OK 1) Verificar Saldo
+OK 2) Realizar Depósito
+OK 3) Realizar Saque
+OK 4) Realizar Transferência entre contas
+OK 5) Criar conta (admin)
+OK 6) Listar todos os clientes (admin)
+OK 7) Finalizar
+
+Requisitos:
+OK a) Para verificar o saldo, deverá ser informado o código da conta. Se o código da conta existir, deverá ser retornado o saldo, ou retornar uma mensagem de erro informando que o código não existe.
+OK b) Para realizar o depósito, deverá ser informado o código da conta e o valor. Se o código da conta existir, deverá ser realizada a operação indicada, ou retornar uma mensagem de erro informando que o código da conta não existe.
+OK c) Para realizar o saque, deverá ser informado o código da conta e o valor. Se o código da conta existir, deverá ser realizada a operação indicada, ou retornar uma mensagem de erro informando que o código da conta não existe.
+OK d) Para realizar a transferência, deverão ser informados os códigos das contas de origem e destino, e o valor a ser transferido. Se o código da conta existir, deverá ser realizada a operação indicada, ou retornar uma mensagem de erro informando que o código da conta não existe. A transferência deverá ser feita apenas se houver saldo na conta de origem.
+OK e) Para criar uma nova conta, deverá ser informado o novo Código da Conta, Nome do cliente e o Saldo de abertura. Se o numero da conta já existir, deverá ser informado o erro.
+OK f) Na opção listar todos os clientes, deverá ser mostrado o Código, Nome e o Saldo das contas de todos os clientes.
+OK g) As opções “Criar Conta” e “Listar Clientes”, somente poderão ser acessadas se informada a senha de administrador (definir no hard code do servidor).
+OK h) Não poderá ser informado (aceitar) valor negativo em nenhuma das operações.
+OK i) A implementação deve ser em Java.
+
+Roteiro de Testes:
+1) Criar uma conta nova e listar os clientes (a partir de outra estação/cliente).
+2) Fazer um depósito.
+3) Listar o saldo (a partir de outra estação/cliente).
+4) Fazer um saque.
+5) Tentar fazer um saque de uma conta inexistente e listar o saldo (a partir de outra estação).
+6) Criar uma nova conta, fazer uma transferência para ela e checar o saldo da conta de origem e destino (a partir de outra estação).
+7) Criar uma conta com um código existente.
+8) Criar uma conta e errar a senha do administrador. Listar os clientes (a partir de outra estação).
+9) Fazer um depósito com valor negativo e listar o saldo (a partir de outra estação).
+10) Iniciar uma nova sessão de cliente e listar todos os clientes.
+11) Fazer um depósito numa conta inexistente e listar todos os clientes.
